@@ -2,37 +2,4 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
-
-    <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.elinstallator_hold4.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
-
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.elinstallator_hold4.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.elinstallator_hold4.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
-    <fragment
-        android:id="@+id/registrationFragment"
-        android:name="com.elinstallator_hold4.RegistrationFragment"
-        android:label="fragment_registration"
-        tools:layout="@layout/fragment_registration" />
-</navigation>
+    android:id="@+id/nav_graph"/>
