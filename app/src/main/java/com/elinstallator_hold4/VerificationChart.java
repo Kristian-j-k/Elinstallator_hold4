@@ -30,21 +30,9 @@ public class VerificationChart {
     String question1_12 = "Er der foretaget foranstaltninger mod elektromagnetiske påvirkninger?";
     String question1_13 = "Er ejer/bruger informeret om funktion og betjening?";
 
-    int answer1[][];
-    int answer1_1;
-    int answer1_2;
-    int answer1_3;
-    int answer1_4;
-    int answer1_5;
-    int answer1_6;
-    int answer1_7;
-    int answer1_8;
-    int answer1_9;
-    int answer1_10;
-    int answer1_11;
-    int answer1_12;
-    int answer1_13;
-
+    //Array with group, question no, answer. answer is: -1 = not filled, 0 = yes, 1 = no, 2 = NA (not applicable)
+    boolean answer[][][] = new boolean[10][15][4];
+    int answersGQA[][][] = new int[10][20][4];
 
     //2. Tavlen
 
@@ -59,16 +47,6 @@ public class VerificationChart {
     String getQuestion2_7 = "Er afdækning og dækplader monteret?";
     String getQuestion2_8 = "Er indføringer tilpasset/tætnet, så tavlens kapslingsklasse er som mærket?";
 
-    int answer2_1;
-    int answer2_2;
-    int answer2_3;
-    int answer2_4;
-    int answer2_5;
-    int answer2_6;
-    int answer2_7;
-    int answer2_8;
-
-
     //3. Installationen
     String text3 = "3. Installation:";
 
@@ -80,24 +58,11 @@ public class VerificationChart {
     String getQuestion3_6 = "Er alle dæksler og afdækninger monteret, så der ikke er berøringsfare?\n";
     String getQuestion3_7 = "Er alle samlinger let tilgængelige?";
 
-    int answer3_1;
-    int answer3_2;
-    int answer3_3;
-    int answer3_4;
-    int answer3_5;
-    int answer3_6;
-    int answer3_7;
-
-
     //4. Indbygningsamaturer
     String text4 = "4. Indbygningsarmaturer:";
 
     String getQuestion4_1 = "Er indbygningsarmaturer korrekt valgt og monteret?";
     String getQuestion4_2 = "Er indbygningsarmaturer installeret således, at overophedning undgås?";
-
-    int answer4_1;
-    int answer4_2;
-
 
     //5. Beskyttelsesledere
     String text5 = "5. Beskyttelsesledere og udligningsforbindelser:";
@@ -109,23 +74,12 @@ public class VerificationChart {
     String getQuestion5_5 = "Er den gennemgående forbindelse i beskyttelsesledere kontrolleret?";
     String getQuestion5_6 = "Er overgangsmodstand for jordelektroden kontrolleret?";
 
-    int answer5_1;
-    int answer5_2;
-    int answer5_3;
-    int answer5_4;
-    int answer5_5;
-    int answer5_6;
-
     //6. Fejlbeskyttelse/suplerende beskyttelse
     String text6 = "6. Fejlbeskyttelse/supplerende beskyttelse:";
 
     String getQuestion6_1 = "Er beskyttelsesmetode korrekt valgt i forhold til installationstype og systemjording?";
     String getQuestion6_2 = "Er RCD’er (fejlstrømsafbrydere) kontrolleret og afprøvet?";
     String getQuestion6_3 = "Er klasse I brugsgenstande tilsluttet til beskyttelseslederen?";
-
-    int answer6_1;
-    int answer6_2;
-    int answer6_3;
 
     //Måleresultater
     String text = "Måleresultater" +
@@ -139,6 +93,14 @@ public class VerificationChart {
 
     public VerificationChart() { //todo include costumer name and adress etc
 
+    }
+
+    public boolean[][][] getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(boolean[][][] answer) {
+        this.answer = answer;
     }
 
     public void setCostumerName(String costumerName) {
@@ -271,58 +233,6 @@ public class VerificationChart {
         return question1_13;
     }
 
-    public int getAnswer1_1() {
-        return answer1_1;
-    }
-
-    public int getAnswer1_2() {
-        return answer1_2;
-    }
-
-    public int getAnswer1_3() {
-        return answer1_3;
-    }
-
-    public int getAnswer1_4() {
-        return answer1_4;
-    }
-
-    public int getAnswer1_5() {
-        return answer1_5;
-    }
-
-    public int getAnswer1_6() {
-        return answer1_6;
-    }
-
-    public int getAnswer1_7() {
-        return answer1_7;
-    }
-
-    public int getAnswer1_8() {
-        return answer1_8;
-    }
-
-    public int getAnswer1_9() {
-        return answer1_9;
-    }
-
-    public int getAnswer1_10() {
-        return answer1_10;
-    }
-
-    public int getAnswer1_11() {
-        return answer1_11;
-    }
-
-    public int getAnswer1_12() {
-        return answer1_12;
-    }
-
-    public int getAnswer1_13() {
-        return answer1_13;
-    }
-
     public String getText2() {
         return text2;
     }
@@ -359,37 +269,6 @@ public class VerificationChart {
         return getQuestion2_8;
     }
 
-    public int getAnswer2_1() {
-        return answer2_1;
-    }
-
-    public int getAnswer2_2() {
-        return answer2_2;
-    }
-
-    public int getAnswer2_3() {
-        return answer2_3;
-    }
-
-    public int getAnswer2_4() {
-        return answer2_4;
-    }
-
-    public int getAnswer2_5() {
-        return answer2_5;
-    }
-
-    public int getAnswer2_6() {
-        return answer2_6;
-    }
-
-    public int getAnswer2_7() {
-        return answer2_7;
-    }
-
-    public int getAnswer2_8() {
-        return answer2_8;
-    }
 
     public String getText3() {
         return text3;
@@ -423,33 +302,7 @@ public class VerificationChart {
         return getQuestion3_7;
     }
 
-    public int getAnswer3_1() {
-        return answer3_1;
-    }
 
-    public int getAnswer3_2() {
-        return answer3_2;
-    }
-
-    public int getAnswer3_3() {
-        return answer3_3;
-    }
-
-    public int getAnswer3_4() {
-        return answer3_4;
-    }
-
-    public int getAnswer3_5() {
-        return answer3_5;
-    }
-
-    public int getAnswer3_6() {
-        return answer3_6;
-    }
-
-    public int getAnswer3_7() {
-        return answer3_7;
-    }
 
     public String getText4() {
         return text4;
@@ -463,13 +316,6 @@ public class VerificationChart {
         return getQuestion4_2;
     }
 
-    public int getAnswer4_1() {
-        return answer4_1;
-    }
-
-    public int getAnswer4_2() {
-        return answer4_2;
-    }
 
     public String getText5() {
         return text5;
@@ -499,29 +345,6 @@ public class VerificationChart {
         return getQuestion5_6;
     }
 
-    public int getAnswer5_1() {
-        return answer5_1;
-    }
-
-    public int getAnswer5_2() {
-        return answer5_2;
-    }
-
-    public int getAnswer5_3() {
-        return answer5_3;
-    }
-
-    public int getAnswer5_4() {
-        return answer5_4;
-    }
-
-    public int getAnswer5_5() {
-        return answer5_5;
-    }
-
-    public int getAnswer5_6() {
-        return answer5_6;
-    }
 
     public String getText6() {
         return text6;
@@ -539,175 +362,9 @@ public class VerificationChart {
         return getQuestion6_3;
     }
 
-    public int getAnswer6_1() {
-        return answer6_1;
-    }
-
-    public int getAnswer6_2() {
-        return answer6_2;
-    }
-
-    public int getAnswer6_3() {
-        return answer6_3;
-    }
 
     public String getText() {
         return text;
     }
 
-    public void setAnswer1_1(int answer1_1) {
-        this.answer1_1 = answer1_1;
-    }
-
-    public void setAnswer1_2(int answer1_2) {
-        this.answer1_2 = answer1_2;
-    }
-
-    public void setAnswer1_3(int answer1_3) {
-        this.answer1_3 = answer1_3;
-    }
-
-    public void setAnswer1_4(int answer1_4) {
-        this.answer1_4 = answer1_4;
-    }
-
-    public void setAnswer1_5(int answer1_5) {
-        this.answer1_5 = answer1_5;
-    }
-
-    public void setAnswer1_6(int answer1_6) {
-        this.answer1_6 = answer1_6;
-    }
-
-    public void setAnswer1_7(int answer1_7) {
-        this.answer1_7 = answer1_7;
-    }
-
-    public void setAnswer1_8(int answer1_8) {
-        this.answer1_8 = answer1_8;
-    }
-
-    public void setAnswer1_9(int answer1_9) {
-        this.answer1_9 = answer1_9;
-    }
-
-    public void setAnswer1_10(int answer1_10) {
-        this.answer1_10 = answer1_10;
-    }
-
-    public void setAnswer1_11(int answer1_11) {
-        this.answer1_11 = answer1_11;
-    }
-
-    public void setAnswer1_12(int answer1_12) {
-        this.answer1_12 = answer1_12;
-    }
-
-    public void setAnswer1_13(int answer1_13) {
-        this.answer1_13 = answer1_13;
-    }
-
-    public void setAnswer2_1(int answer2_1) {
-        this.answer2_1 = answer2_1;
-    }
-
-    public void setAnswer2_2(int answer2_2) {
-        this.answer2_2 = answer2_2;
-    }
-
-    public void setAnswer2_3(int answer2_3) {
-        this.answer2_3 = answer2_3;
-    }
-
-    public void setAnswer2_4(int answer2_4) {
-        this.answer2_4 = answer2_4;
-    }
-
-    public void setAnswer2_5(int answer2_5) {
-        this.answer2_5 = answer2_5;
-    }
-
-    public void setAnswer2_6(int answer2_6) {
-        this.answer2_6 = answer2_6;
-    }
-
-    public void setAnswer2_7(int answer2_7) {
-        this.answer2_7 = answer2_7;
-    }
-
-    public void setAnswer2_8(int answer2_8) {
-        this.answer2_8 = answer2_8;
-    }
-
-    public void setAnswer3_1(int answer3_1) {
-        this.answer3_1 = answer3_1;
-    }
-
-    public void setAnswer3_2(int answer3_2) {
-        this.answer3_2 = answer3_2;
-    }
-
-    public void setAnswer3_3(int answer3_3) {
-        this.answer3_3 = answer3_3;
-    }
-
-    public void setAnswer3_4(int answer3_4) {
-        this.answer3_4 = answer3_4;
-    }
-
-    public void setAnswer3_5(int answer3_5) {
-        this.answer3_5 = answer3_5;
-    }
-
-    public void setAnswer3_6(int answer3_6) {
-        this.answer3_6 = answer3_6;
-    }
-
-    public void setAnswer3_7(int answer3_7) {
-        this.answer3_7 = answer3_7;
-    }
-
-    public void setAnswer4_1(int answer4_1) {
-        this.answer4_1 = answer4_1;
-    }
-
-    public void setAnswer4_2(int answer4_2) {
-        this.answer4_2 = answer4_2;
-    }
-
-    public void setAnswer5_1(int answer5_1) {
-        this.answer5_1 = answer5_1;
-    }
-
-    public void setAnswer5_2(int answer5_2) {
-        this.answer5_2 = answer5_2;
-    }
-
-    public void setAnswer5_3(int answer5_3) {
-        this.answer5_3 = answer5_3;
-    }
-
-    public void setAnswer5_4(int answer5_4) {
-        this.answer5_4 = answer5_4;
-    }
-
-    public void setAnswer5_5(int answer5_5) {
-        this.answer5_5 = answer5_5;
-    }
-
-    public void setAnswer5_6(int answer5_6) {
-        this.answer5_6 = answer5_6;
-    }
-
-    public void setAnswer6_1(int answer6_1) {
-        this.answer6_1 = answer6_1;
-    }
-
-    public void setAnswer6_2(int answer6_2) {
-        this.answer6_2 = answer6_2;
-    }
-
-    public void setAnswer6_3(int answer6_3) {
-        this.answer6_3 = answer6_3;
-    }
 }
