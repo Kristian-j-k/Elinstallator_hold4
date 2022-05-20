@@ -1,4 +1,4 @@
-package com.Elinstallator_hold4;
+package com.elinstallator_hold4;
 
 public class VerificationChart {
 
