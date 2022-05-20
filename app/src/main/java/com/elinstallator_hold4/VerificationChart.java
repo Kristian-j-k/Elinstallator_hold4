@@ -32,7 +32,7 @@ public class VerificationChart {
 
     //Array with group, question no, answer. answer is: -1 = not filled, 0 = yes, 1 = no, 2 = NA (not applicable)
     boolean answer[][][] = new boolean[10][15][4];
-    int answersGQA[][][] = new int[10][20][4];
+   // int answersGQA[][][] = new int[10][20][4];
 
     //2. Tavlen
 
