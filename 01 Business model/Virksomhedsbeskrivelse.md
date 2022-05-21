@@ -42,7 +42,10 @@ Her identificere vi hvilke omkostninger vi vil få. På nuværende tidspunkt har
 Her identificere vi hvordan vi har tænkt os at tjene på vores produkt. Appen vi laver til el-installatørerne på Zealand laver vi gratis, men på sigt vil vi gerne bruge appen vi udvikler til Zealand som et standard produkt, vi kan ændre på og tilpasse så vi appen kan sælges til andre virksomheder der ansætter el-installatører. Dette salg kunne eventuelt laves som et direkte køb, hvor at kunden overtager appens drift og alt andet, eller kunden kunne hyre os til at tilpasse appen og holde den kørende.
 
 ### Finansiering
-For at få styr på vores finansiering, har vi lavet et investeringsbudget. 
+
+For at få styr på vores finansiering, har vi lavet et investeringsbudget. Men dette er vores overordnede tanker.
+
+- 
 
 ### Strategi for implementering og skalering af virksomheden til andre kundesegmenter
 ## Implementering
