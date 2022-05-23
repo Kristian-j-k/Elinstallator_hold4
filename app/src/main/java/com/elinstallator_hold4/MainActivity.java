@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
 //save all choices in verification_chart3.xml
     public void save(View v) {
 
-        CheckBox[][] chek = new CheckBox[20][3];
+        CheckBox[][] chek = new CheckBox[40][3];
 
         chek[0][0] = (CheckBox) findViewById(R.id.checkBox1_yes);
         chek[0][1] = (CheckBox) findViewById(R.id.checkBox1_no);
