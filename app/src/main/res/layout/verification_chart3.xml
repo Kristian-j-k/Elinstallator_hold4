@@ -20,7 +20,7 @@
         android:layout_width="150dp"
         android:layout_height="20dp"
        android:gravity="end"
-        android:text="     Ja        Nej  Irellevant    "/>
+        android:text="      Ja        Nej  Irellevant   "/>
     </LinearLayout>
 
     <ScrollView
@@ -30,28 +30,35 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
+            <TextView android:id="@+id/tittel1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20dp"
+                android:text="Tittel" />
 <LinearLayout
-    android:id="@+id/question1_1"
+    android:id="@+id/question1"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-    <TextView android:id="@+id/text1_1"
+    <TextView android:id="@+id/text1"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
         android:textSize="14dp"
         android:text="Afventer" />
     <CheckBox
-        android:id="@+id/checkBox1_1_yes"
+        android:id="@+id/checkBox1_yes"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:gravity="center" />
     <CheckBox
-        android:id="@+id/checkBox1_1_no"
+        android:id="@+id/checkBox1_no"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:gravity="center"/>
     <CheckBox
-        android:id="@+id/checkBox1_1_NA"
+        android:id="@+id/checkBox1_NA"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:gravity="center"/>
@@ -59,11 +66,11 @@
 
 
     <LinearLayout
-        android:id="@+id/question1_2"
+        android:id="@+id/question2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView android:id="@+id/text1_2"
+        <TextView android:id="@+id/text2"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
@@ -71,34 +78,32 @@
             android:text="Afventer" />
 
         <CheckBox
-            android:id="@+id/checkBox1_2_yes"
+            android:id="@+id/checkBox2_yes"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"
-            android:onClick="radio1_2_yes"/>
+            android:onClick="radio2_yes"/>
 
         <CheckBox
-            android:id="@+id/checkBox1_2_no"
+            android:id="@+id/checkBox2_no"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:gravity="center"
-            android:onClick="radio1_2_no"/>
+            android:gravity="center"/>
 
         <CheckBox
-            android:id="@+id/checkBox1_2_NA"
+            android:id="@+id/checkBox2_NA"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:gravity="center"
-            android:onClick="radio1_2_na"/>
+            android:gravity="center" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/question1_3"
+        android:id="@+id/question3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView android:id="@+id/text1_3"
+        <TextView android:id="@+id/text3"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
@@ -106,19 +111,19 @@
             android:text="Afventer"  />
 
         <CheckBox
-            android:id="@+id/checkBox1_3_yes"
+            android:id="@+id/checkBox3_yes"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
 
         <CheckBox
-            android:id="@+id/checkBox1_3_no"
+            android:id="@+id/checkBox3_no"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
 
         <CheckBox
-            android:id="@+id/checkBox1_3_NA"
+            android:id="@+id/checkBox3_NA"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
@@ -126,11 +131,11 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/question1_4"
+        android:id="@+id/question4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView android:id="@+id/text1_4"
+        <TextView android:id="@+id/text4"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
@@ -138,19 +143,19 @@
             android:text="Afventer"  />
 
         <CheckBox
-            android:id="@+id/checkBox1_4_yes"
+            android:id="@+id/checkBox4_yes"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
 
         <CheckBox
-            android:id="@+id/checkBox1_4_no"
+            android:id="@+id/checkBox4_no"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
 
         <CheckBox
-            android:id="@+id/checkBox1_4_NA"
+            android:id="@+id/checkBox4_NA"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
@@ -158,251 +163,979 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/question1_5"
+        android:id="@+id/question5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView android:id="@+id/text1_5"
+        <TextView android:id="@+id/text5"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:textSize="14dp"
             android:text="Afventer" />
         <CheckBox
-            android:id="@+id/checkBox1_5_yes"
+            android:id="@+id/checkBox5_yes"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center" />
         <CheckBox
-            android:id="@+id/checkBox1_5_no"
+            android:id="@+id/checkBox5_no"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
         <CheckBox
-            android:id="@+id/checkBox1_5_NA"
+            android:id="@+id/checkBox5_NA"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/question1_6"
+        android:id="@+id/question6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView android:id="@+id/text1_6"
+        <TextView android:id="@+id/text6"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:textSize="14dp"
             android:text="Afventer" />
         <CheckBox
-            android:id="@+id/checkBox1_6_yes"
+            android:id="@+id/checkBox6_yes"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center" />
         <CheckBox
-            android:id="@+id/checkBox1_6_no"
+            android:id="@+id/checkBox6_no"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
         <CheckBox
-            android:id="@+id/checkBox1_6_NA"
+            android:id="@+id/checkBox6_NA"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/question1_7"
+        android:id="@+id/question7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView android:id="@+id/text1_7"
+        <TextView android:id="@+id/text7"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:textSize="14dp"
             android:text="Afventer" />
         <CheckBox
-            android:id="@+id/checkBox1_7_yes"
+            android:id="@+id/checkBox7_yes"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center" />
         <CheckBox
-            android:id="@+id/checkBox1_7_no"
+            android:id="@+id/checkBox7_no"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
         <CheckBox
-            android:id="@+id/checkBox1_7_NA"
+            android:id="@+id/checkBox7_NA"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/question1_8"
+        android:id="@+id/question8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView android:id="@+id/text1_8"
+        <TextView android:id="@+id/text8"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:textSize="14dp"
             android:text="Afventer" />
         <CheckBox
-            android:id="@+id/checkBox1_8_yes"
+            android:id="@+id/checkBox8_yes"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center" />
         <CheckBox
-            android:id="@+id/checkBox1_8_no"
+            android:id="@+id/checkBox8_no"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
         <CheckBox
-            android:id="@+id/checkBox1_8_NA"
+            android:id="@+id/checkBox8_NA"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/question1_9"
+        android:id="@+id/question9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView android:id="@+id/text1_9"
+        <TextView android:id="@+id/text9"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:textSize="14dp"
             android:text="Afventer" />
         <CheckBox
-            android:id="@+id/checkBox1_9_yes"
+            android:id="@+id/checkBox9_yes"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center" />
         <CheckBox
-            android:id="@+id/checkBox1_9_no"
+            android:id="@+id/checkBox9_no"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
         <CheckBox
-            android:id="@+id/checkBox1_9_NA"
+            android:id="@+id/checkBox9_NA"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/question1_10"
+        android:id="@+id/question10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView android:id="@+id/text1_10"
+        <TextView android:id="@+id/text10"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:textSize="14dp"
             android:text="Afventer" />
         <CheckBox
-            android:id="@+id/checkBox1_10_yes"
+            android:id="@+id/checkBox10_yes"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center" />
         <CheckBox
-            android:id="@+id/checkBox1_10_no"
+            android:id="@+id/checkBox10_no"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
         <CheckBox
-            android:id="@+id/checkBox1_10_NA"
+            android:id="@+id/checkBox10_NA"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/question1_11"
+        android:id="@+id/question11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView android:id="@+id/text1_11"
+        <TextView android:id="@+id/text11"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:textSize="14dp"
             android:text="Afventer" />
         <CheckBox
-            android:id="@+id/checkBox1_11_yes"
+            android:id="@+id/checkBox11_yes"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center" />
         <CheckBox
-            android:id="@+id/checkBox1_11_no"
+            android:id="@+id/checkBox11_no"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
         <CheckBox
-            android:id="@+id/checkBox1_11_NA"
+            android:id="@+id/checkBox11_NA"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/question1_12"
+        android:id="@+id/question12"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView android:id="@+id/text1_12"
+        <TextView android:id="@+id/text12"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:textSize="14dp"
             android:text="Afventer" />
         <CheckBox
-            android:id="@+id/checkBox1_12_yes"
+            android:id="@+id/checkBox12_yes"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center" />
         <CheckBox
-            android:id="@+id/checkBox1_12_no"
+            android:id="@+id/checkBox12_no"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
         <CheckBox
-            android:id="@+id/checkBox1_12_NA"
+            android:id="@+id/checkBox12_NA"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/question1_13"
+        android:id="@+id/question13"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView android:id="@+id/text1_13"
+        <TextView android:id="@+id/text13"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:textSize="14dp"
             android:text="Afventer" />
         <CheckBox
-            android:id="@+id/checkBox1_13_yes"
+            android:id="@+id/checkBox13_yes"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center" />
         <CheckBox
-            android:id="@+id/checkBox1_13_no"
+            android:id="@+id/checkBox13_no"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
         <CheckBox
-            android:id="@+id/checkBox1_13_NA"
+            android:id="@+id/checkBox13_NA"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"/>
     </LinearLayout>
 
+            <TextView android:id="@+id/tittel2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20dp"
+                android:text="Tittel" />
+
+            <LinearLayout
+                android:id="@+id/question14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text14"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox14_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox14_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox14_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text15"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox15_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox15_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox15_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/question16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text16"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox16_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox16_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox16_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/question17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text17"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox17_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox17_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox17_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/question18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text18"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox18_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox18_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox18_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/question19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text19"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox19_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox19_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox19_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/questio20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text20"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox20_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox20_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox20_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/question21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text21"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox21_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox21_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox21_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <TextView android:id="@+id/tittel3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20dp"
+                android:text="Tittel" />
 
 
-    <Button
+
+            <LinearLayout
+                android:id="@+id/question22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text22"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox22_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox22_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox22_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/question23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text23"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox23_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox23_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox23_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text24"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox24_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox24_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox24_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text25"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox25_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox25_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox25_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text26"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox26_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox26_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox26_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text27"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox27_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox27_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox27_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text28"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox28_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox28_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox28_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <TextView android:id="@+id/tittel4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20dp"
+                android:text="Tittel" />
+
+            <LinearLayout
+                android:id="@+id/question29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text29"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox29_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox29_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox29_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/question30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text30"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox30_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox30_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox30_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+
+
+            <TextView android:id="@+id/tittel5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20dp"
+                android:text="Tittel" />
+
+            <LinearLayout
+                android:id="@+id/question31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text31"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox31_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox31_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox31_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/question32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text32"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox32_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox32_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox32_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/question33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text33"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox33_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox33_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox33_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/question34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text34"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox34_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox34_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox34_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/question35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text35"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox35_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox35_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox35_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/question36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text36"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox36_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox36_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox36_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+
+
+            <TextView android:id="@+id/tittel6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20dp"
+                android:text="Tittel" />
+
+            <LinearLayout
+                android:id="@+id/question37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text37"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox37_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox37_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox37_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/question38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text38"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox38_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox38_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox38_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/question39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/text39"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:text="Afventer" />
+                <CheckBox
+                    android:id="@+id/checkBox39_yes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center" />
+                <CheckBox
+                    android:id="@+id/checkBox39_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/checkBox39_NA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+
+
+            <Button
         android:id="@+id/save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
