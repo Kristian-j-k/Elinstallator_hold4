@@ -6,17 +6,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Registration extends AppCompatActivity {
 
-    TextView Error;
-    EditText Username;
-    EditText Password;
-    EditText Email;
-    EditText Repeat_Password;
-    Button SignUp;
-    TextView SignIn;
+    EditText username,email,password,repassword;
+    TextView error;
+    Button btnSignUp, btnLogin;
     DatabaseHelper db;
 
     @Override
@@ -24,49 +22,65 @@ public class Registration extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
 
-        Username = (EditText) findViewById(R.id.editUserName);
-        Email = (EditText) findViewById(R.id.editEmail);
-        Password = (EditText) findViewById(R.id.editPassword);
-        Password = (EditText) findViewById(R.id.editPassword);
-        Repeat_Password = (EditText) findViewById(R.id.editPasswordVerification);
-        SignUp = (Button) findViewById(R.id.Loginbtn);
-        SignUp.setOnClickListener(new View.OnClickListener() {
+        username = (EditText) findViewById(R.id.editUserName);
+        email = (EditText) findViewById(R.id.editEmail);
+        password = (EditText) findViewById(R.id.editPassword);
+        repassword = (EditText) findViewById(R.id.editRePassword);
+
+        btnSignUp = (Button) findViewById(R.id.btnSignUpReg);
+        btnLogin = (Button) findViewById(R.id.btnLoginReg);
+
+        db = new DatabaseHelper(this);
+
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String username= Username.getText().toString().trim();
-                String email= Email.getText().toString().trim();
-                String password= Password.getText().toString().trim();
-                String repeat_password= Repeat_Password.getText().toString().trim();
+                String user=username.getText().toString();
+                String mail=email.getText().toString();
+                String pass=password.getText().toString();
+                String repass= repassword.getText().toString();
 
-                if (password.equals(repeat_password)){
-                    long vaLue =db.addUser(username,email, password);
-
-                    if (vaLue >1){
-                        Intent moveToLogin = new Intent(Registration.this, MainActivity.class);
-                        startActivity(moveToLogin);
+                if (user.equals("") || mail.equals("") || pass.equals("") || repass.equals(""))
+                {
+                    Toast.makeText(Registration.this, "Fill al the fields.", Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
+                    if (pass.equals(repass))
+                    {
+                        Boolean usercheckResult = db.checkUser(user);
+                        if(usercheckResult == false)
+                        {
+                            Boolean regResult = db.addUser(user,mail,pass);
+                            if (regResult == true)
+                            {
+                                Toast.makeText(Registration.this, "Registration Successful.", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                                startActivity(intent);
+                            }
+                            else
+                            {
+                                Toast.makeText(Registration.this, "Registration Failed.", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                        else
+                        {
+                            Toast.makeText(Registration.this, "User already exists. \n Please sign in.", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                    else
+                    {
+                        Toast.makeText(Registration.this, "Password not matching.", Toast.LENGTH_SHORT).show();
                     }
                 }
-                else {
-                    Error = (TextView) findViewById(R.id.error);
-                    Error.setText("Password is not matching");
-                }
             }
         });
-
-        SignIn =(TextView) findViewById(R.id.SignIn);
-        SignIn.setOnClickListener(new View.OnClickListener(){
-
+        btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openLoginActivity();
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
             }
         });
-
     }
-
-    private void openLoginActivity() {
-        Intent login = new Intent(Registration.this, MainActivity.class);
-        startActivity(login);
-    }
-
 }

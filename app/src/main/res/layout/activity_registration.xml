@@ -9,19 +9,18 @@
         android:id="@+id/frameLayout3">
 
     <EditText
-            android:layout_width="246dp"
-            android:layout_height="50dp"
-            android:inputType="textPassword"
-            android:ems="10"
-            android:id="@+id/editPasswordVerification"
-            android:text=""
-            android:hint="Repeat Password"
-            android:background="#319A9A9A"
-            app:layout_constraintTop_toBottomOf="@+id/editPassword"
-            android:layout_marginTop="16dp"
-            app:layout_constraintStart_toStartOf="@+id/editPassword"
-            app:layout_constraintEnd_toEndOf="@+id/editPassword"
-    />
+        android:id="@+id/editRePassword"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="#319A9A9A"
+        android:ems="10"
+        android:hint="Gentag Kodeord"
+        android:inputType="textPassword"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/editPassword"
+        app:layout_constraintStart_toStartOf="@+id/editPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
     <TextView
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -37,38 +36,41 @@
             android:gravity="center"
             android:textStyle="bold"
     />
+
     <EditText
-            android:layout_width="246dp"
-            android:layout_height="50dp"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editUserName"
-            android:background="#319A9A9A"
-            app:layout_constraintTop_toBottomOf="@+id/textView5"
-            android:layout_marginTop="32dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:hint="Username"
-    />
+        android:id="@+id/editUserName"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="50dp"
+        android:background="#319A9A9A"
+        android:ems="10"
+        android:hint="Brugernavn"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
         android:id="@+id/editPassword"
-        android:layout_width="246dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:background="#319A9A9A"
         android:ems="10"
-        android:hint="Password"
+        android:hint="Kodeord"
         android:inputType="textPassword"
         android:text=""
         app:layout_constraintEnd_toEndOf="@+id/editUserName"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editUserName"
-        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/editEmail"
+        />
 
     <EditText
         android:id="@+id/editEmail"
-        android:layout_width="246dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:background="#319A9A9A"
@@ -76,39 +78,44 @@
         android:hint="E-Mail"
         android:inputType="textEmailAddress"
         android:text=""
-        app:layout_constraintEnd_toEndOf="@+id/editPasswordVerification"
-        app:layout_constraintStart_toStartOf="@+id/editPasswordVerification"
-        app:layout_constraintTop_toBottomOf="@+id/editUserName" />
+        app:layout_constraintEnd_toEndOf="@+id/editUserName"
+        app:layout_constraintStart_toStartOf="@+id/editUserName"
+        app:layout_constraintTop_toBottomOf="@+id/editUserName"
+        />
 
     <Button
-        android:id="@+id/SignUpbtn"
+        android:id="@+id/btnSignUpReg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="#FFF387"
-        android:text="Sign Up"
+        android:text="Registrer"
         android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/editPasswordVerification"
-        app:layout_constraintTop_toBottomOf="@+id/editPasswordVerification" />
-
-    <TextView
-        android:id="@+id/SignIn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Sign In:"
-        android:textColor="#000000"
-        app:layout_constraintStart_toStartOf="@+id/editEmail"
-        app:layout_constraintTop_toBottomOf="@+id/editPasswordVerification" />
+        app:layout_constraintEnd_toEndOf="@+id/editRePassword"
+        app:layout_constraintTop_toBottomOf="@+id/editRePassword"
+        />
 
     <TextView
         android:id="@+id/error"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/editPasswordVerification"
-        app:layout_constraintStart_toStartOf="@+id/editPasswordVerification"
-        app:layout_constraintTop_toBottomOf="@+id/SignUpbtn" />
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/editRePassword"
+        app:layout_constraintStart_toStartOf="@+id/editRePassword"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUpReg"
+        />
+
+    <Button
+        android:id="@+id/btnLoginReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFF387"
+        android:text="Log ind"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/editRePassword"
+        app:layout_constraintTop_toBottomOf="@+id/editRePassword"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
