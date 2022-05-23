@@ -24,9 +24,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //generate all text in verification_chart3.xml
+//generate all text in verification_chart3.xml
     public  void setText(){
 
+        //Title is added to the xml
+        ((TextView) findViewById(R.id.tittel1)).setText(vc.text1);
+        ((TextView) findViewById(R.id.tittel2)).setText(vc.text2);
+        ((TextView) findViewById(R.id.tittel3)).setText(vc.text3);
+        ((TextView) findViewById(R.id.tittel4)).setText(vc.text4);
+        ((TextView) findViewById(R.id.tittel5)).setText(vc.text5);
+        ((TextView) findViewById(R.id.tittel6)).setText(vc.text6);
 
         // makes Arraylist with the id from xml
         textFields.add(0,(TextView)findViewById(R.id.text1));
@@ -42,6 +49,34 @@ public class MainActivity extends AppCompatActivity {
         textFields.add(10,(TextView)findViewById(R.id.text11));
         textFields.add(11,(TextView)findViewById(R.id.text12));
         textFields.add(12,(TextView)findViewById(R.id.text13));
+        textFields.add(13,(TextView)findViewById(R.id.text14));
+        textFields.add(14,(TextView)findViewById(R.id.text15));
+        textFields.add(15,(TextView)findViewById(R.id.text16));
+        textFields.add(16,(TextView)findViewById(R.id.text17));
+        textFields.add(17,(TextView)findViewById(R.id.text18));
+        textFields.add(18,(TextView)findViewById(R.id.text19));
+        textFields.add(19,(TextView)findViewById(R.id.text20));
+        textFields.add(20,(TextView)findViewById(R.id.text21));
+        textFields.add(21,(TextView)findViewById(R.id.text22));
+        textFields.add(22,(TextView)findViewById(R.id.text23));
+        textFields.add(23,(TextView)findViewById(R.id.text24));
+        textFields.add(24,(TextView)findViewById(R.id.text25));
+        textFields.add(25,(TextView)findViewById(R.id.text26));
+        textFields.add(26,(TextView)findViewById(R.id.text27));
+        textFields.add(27,(TextView)findViewById(R.id.text28));
+        textFields.add(28,(TextView)findViewById(R.id.text29));
+        textFields.add(29,(TextView)findViewById(R.id.text30));
+        textFields.add(30,(TextView)findViewById(R.id.text31));
+        textFields.add(31,(TextView)findViewById(R.id.text32));
+        textFields.add(32,(TextView)findViewById(R.id.text33));
+        textFields.add(33,(TextView)findViewById(R.id.text34));
+        textFields.add(34,(TextView)findViewById(R.id.text35));
+        textFields.add(35,(TextView)findViewById(R.id.text36));
+        textFields.add(36,(TextView)findViewById(R.id.text37));
+        textFields.add(37,(TextView)findViewById(R.id.text38));
+        textFields.add(38,(TextView)findViewById(R.id.text39));
+
+
 
         // using the xml id, here the text from the class VerificationChart is set
 
@@ -52,7 +87,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    //save all choices in verification_chart3.xml
+
+
+
+//save all choices in verification_chart3.xml
     public void save(View v) {
 
         CheckBox[][] chek = new CheckBox[20][3];
@@ -96,6 +134,85 @@ public class MainActivity extends AppCompatActivity {
         chek[12][0] = (CheckBox) findViewById(R.id.checkBox13_yes);
         chek[12][1] = (CheckBox) findViewById(R.id.checkBox13_no);
         chek[12][2] = (CheckBox) findViewById(R.id.checkBox13_NA);
+        chek[13][0] = (CheckBox) findViewById(R.id.checkBox14_yes);
+        chek[13][1] = (CheckBox) findViewById(R.id.checkBox14_no);
+        chek[13][2] = (CheckBox) findViewById(R.id.checkBox14_NA);
+        chek[14][0] = (CheckBox) findViewById(R.id.checkBox15_yes);
+        chek[14][1] = (CheckBox) findViewById(R.id.checkBox15_no);
+        chek[14][2] = (CheckBox) findViewById(R.id.checkBox15_NA);
+        chek[15][0] = (CheckBox) findViewById(R.id.checkBox16_yes);
+        chek[15][1] = (CheckBox) findViewById(R.id.checkBox16_no);
+        chek[15][2] = (CheckBox) findViewById(R.id.checkBox16_NA);
+        chek[16][0] = (CheckBox) findViewById(R.id.checkBox17_yes);
+        chek[16][1] = (CheckBox) findViewById(R.id.checkBox17_no);
+        chek[16][2] = (CheckBox) findViewById(R.id.checkBox17_NA);
+        chek[17][0] = (CheckBox) findViewById(R.id.checkBox18_yes);
+        chek[17][1] = (CheckBox) findViewById(R.id.checkBox18_no);
+        chek[17][2] = (CheckBox) findViewById(R.id.checkBox18_NA);
+        chek[18][0] = (CheckBox) findViewById(R.id.checkBox19_yes);
+        chek[18][1] = (CheckBox) findViewById(R.id.checkBox19_no);
+        chek[18][2] = (CheckBox) findViewById(R.id.checkBox19_NA);
+        chek[19][0] = (CheckBox) findViewById(R.id.checkBox20_yes);
+        chek[19][1] = (CheckBox) findViewById(R.id.checkBox20_no);
+        chek[19][2] = (CheckBox) findViewById(R.id.checkBox20_NA);
+        chek[20][0] = (CheckBox) findViewById(R.id.checkBox21_yes);
+        chek[20][1] = (CheckBox) findViewById(R.id.checkBox21_no);
+        chek[20][2] = (CheckBox) findViewById(R.id.checkBox21_NA);
+        chek[21][0] = (CheckBox) findViewById(R.id.checkBox22_yes);
+        chek[21][1] = (CheckBox) findViewById(R.id.checkBox22_no);
+        chek[21][2] = (CheckBox) findViewById(R.id.checkBox22_NA);
+        chek[22][0] = (CheckBox) findViewById(R.id.checkBox23_yes);
+        chek[22][1] = (CheckBox) findViewById(R.id.checkBox23_no);
+        chek[22][2] = (CheckBox) findViewById(R.id.checkBox23_NA);
+        chek[23][0] = (CheckBox) findViewById(R.id.checkBox24_yes);
+        chek[23][1] = (CheckBox) findViewById(R.id.checkBox24_no);
+        chek[23][2] = (CheckBox) findViewById(R.id.checkBox24_NA);
+        chek[24][0] = (CheckBox) findViewById(R.id.checkBox25_yes);
+        chek[24][1] = (CheckBox) findViewById(R.id.checkBox25_no);
+        chek[24][2] = (CheckBox) findViewById(R.id.checkBox25_NA);
+        chek[25][0] = (CheckBox) findViewById(R.id.checkBox26_yes);
+        chek[25][1] = (CheckBox) findViewById(R.id.checkBox26_no);
+        chek[25][2] = (CheckBox) findViewById(R.id.checkBox26_NA);
+        chek[26][0] = (CheckBox) findViewById(R.id.checkBox27_yes);
+        chek[26][1] = (CheckBox) findViewById(R.id.checkBox27_no);
+        chek[26][2] = (CheckBox) findViewById(R.id.checkBox27_NA);
+        chek[27][0] = (CheckBox) findViewById(R.id.checkBox28_yes);
+        chek[27][1] = (CheckBox) findViewById(R.id.checkBox28_no);
+        chek[27][2] = (CheckBox) findViewById(R.id.checkBox28_NA);
+        chek[28][0] = (CheckBox) findViewById(R.id.checkBox29_yes);
+        chek[28][1] = (CheckBox) findViewById(R.id.checkBox29_no);
+        chek[28][2] = (CheckBox) findViewById(R.id.checkBox29_NA);
+        chek[29][0] = (CheckBox) findViewById(R.id.checkBox30_yes);
+        chek[29][1] = (CheckBox) findViewById(R.id.checkBox30_no);
+        chek[29][2] = (CheckBox) findViewById(R.id.checkBox30_NA);
+        chek[30][0] = (CheckBox) findViewById(R.id.checkBox31_yes);
+        chek[30][1] = (CheckBox) findViewById(R.id.checkBox31_no);
+        chek[30][2] = (CheckBox) findViewById(R.id.checkBox31_NA);
+        chek[31][0] = (CheckBox) findViewById(R.id.checkBox32_yes);
+        chek[31][1] = (CheckBox) findViewById(R.id.checkBox32_no);
+        chek[31][2] = (CheckBox) findViewById(R.id.checkBox32_NA);
+        chek[32][0] = (CheckBox) findViewById(R.id.checkBox33_yes);
+        chek[32][1] = (CheckBox) findViewById(R.id.checkBox33_no);
+        chek[32][2] = (CheckBox) findViewById(R.id.checkBox33_NA);
+        chek[33][0] = (CheckBox) findViewById(R.id.checkBox34_yes);
+        chek[33][1] = (CheckBox) findViewById(R.id.checkBox34_no);
+        chek[33][2] = (CheckBox) findViewById(R.id.checkBox34_NA);
+        chek[34][0] = (CheckBox) findViewById(R.id.checkBox35_yes);
+        chek[34][1] = (CheckBox) findViewById(R.id.checkBox35_no);
+        chek[34][2] = (CheckBox) findViewById(R.id.checkBox35_NA);
+        chek[35][0] = (CheckBox) findViewById(R.id.checkBox36_yes);
+        chek[35][1] = (CheckBox) findViewById(R.id.checkBox36_no);
+        chek[35][2] = (CheckBox) findViewById(R.id.checkBox36_NA);
+        chek[36][0] = (CheckBox) findViewById(R.id.checkBox37_yes);
+        chek[36][1] = (CheckBox) findViewById(R.id.checkBox37_no);
+        chek[36][2] = (CheckBox) findViewById(R.id.checkBox37_NA);
+        chek[37][0] = (CheckBox) findViewById(R.id.checkBox38_yes);
+        chek[37][1] = (CheckBox) findViewById(R.id.checkBox38_no);
+        chek[37][2] = (CheckBox) findViewById(R.id.checkBox38_NA);
+        chek[38][0] = (CheckBox) findViewById(R.id.checkBox39_yes);
+        chek[38][1] = (CheckBox) findViewById(R.id.checkBox39_no);
+        chek[38][2] = (CheckBox) findViewById(R.id.checkBox39_NA);
+
 
         // vc.answer[0][0]= chek[0][0].isChecked();
       /*  checkBox.get(1).add( 0, (CheckBox) findViewById(R.id.checkBox2_yes));
@@ -109,8 +226,8 @@ public class MainActivity extends AppCompatActivity {
         while (chek[i][0] != null) {
             for (int j = 0; j <= 2; j++) {
                 vc.answer[i][j] = chek[i][j].isChecked();
-                //           System.out.println(vc.answer[i][j]);      Test
-                //           System.out.println("i er "+i+" j er "+j);     Test
+     //           System.out.println(vc.answer[i][j]);      Test
+     //           System.out.println("i er "+i+" j er "+j);     Test
             }
             i++;
         }
