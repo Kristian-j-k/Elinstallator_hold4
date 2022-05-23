@@ -1,6 +1,9 @@
-package com.elinstallator_hold4;
+package com.Elinstallator_hold4;
+
+import java.util.ArrayList;
 
 public class VerificationChart {
+
 
     //Installation information
     String costumerName;
@@ -13,39 +16,46 @@ public class VerificationChart {
     String verificationMadeBy;
     String Date;
 
+
+    //Answers - Array with group, question no, answer. answer is: -1 = not filled, 0 = yes, 1 = no, 2 = NA (not applicable)
+    // ArrayList<ArrayList<Boolean>> answers = new ArrayList<ArrayList<Boolean>>();
+
+    boolean answer[][] = new boolean[20][4];
+
+    //Questions - arrayList with questions
+    ArrayList<String> questions = new ArrayList<String>();
+
+
     //1. Gennerelt
     String text1 = "1. Gennerelt:";
 
-    String question1_1 = "Er der taget hensyn til ydre påvirkninger og anvendt korrekt kapslingsklasse?";
-    String question1_2 = "Er der brandtætnet ved gennemføringer?";
-    String question1_3 = "Er installationen isolationsprøvet?";
-    String question1_4 = "Er der foretaget polaritetsprøve og kontrol af fasefølgen?";
-    String question1_5 = "Er der foretaget funktionsprøver af installationen?";
-    String question1_6 = "Er nul- og beskyttelsesledere korrekt identificeret?";
-    String question1_7 = "Er ledere korrekt overstrømsbeskyttet og valgt efter strømværdi?";
-    String question1_8 = "Er SPD’er (overspændingsbeskyttelsesudstyr) korrekt valgt og installeret?";
-    String question1_9 = "Er permanent tilsluttede brugsgenstande egnet til den pågældende anvendelse?";
-    String question1_10 = "Er nødvendig dokumentation til stede?";
-    String question1_11 = "Er spændingsfald kontrolleret?";
-    String question1_12 = "Er der foretaget foranstaltninger mod elektromagnetiske påvirkninger?";
-    String question1_13 = "Er ejer/bruger informeret om funktion og betjening?";
+    String question0 = "Er der taget hensyn til ydre påvirkninger og anvendt korrekt kapslingsklasse?";
+    String question1 = "Er der brandtætnet ved gennemføringer?";
+    String question2 = "Er installationen isolationsprøvet?";
+    String question3 = "Er der foretaget polaritetsprøve og kontrol af fasefølgen?";
+    String question4 = "Er der foretaget funktionsprøver af installationen?";
+    String question5 = "Er nul- og beskyttelsesledere korrekt identificeret?";
+    String question6 = "Er ledere korrekt overstrømsbeskyttet og valgt efter strømværdi?";
+    String question7 = "Er SPD’er (overspændingsbeskyttelsesudstyr) korrekt valgt og installeret?";
+    String question8 = "Er permanent tilsluttede brugsgenstande egnet til den pågældende anvendelse?";
+    String question9 = "Er nødvendig dokumentation til stede?";
+    String question10 = "Er spændingsfald kontrolleret?";
+    String question11 = "Er der foretaget foranstaltninger mod elektromagnetiske påvirkninger?";
+    String question12 = "Er ejer/bruger informeret om funktion og betjening?";
 
-    //Array with group, question no, answer. answer is: -1 = not filled, 0 = yes, 1 = no, 2 = NA (not applicable)
-    boolean answer[][][] = new boolean[10][15][4];
-   // int answersGQA[][][] = new int[10][20][4];
 
     //2. Tavlen
 
     String text2 = "2. Tavlen:";
 
-    String getQuestion2_1 = "Er der tilstrækkelig plads til at arbejde på/adgang til tavlen?";
-    String getQuestion2_2 = "Er overstrømsbeskyttelsesudstyr korrekt valgt og evt. indstillet?";
-    String getQuestion2_3 = "Er der en entydig mærkning af beskyttelsesudstyr med tilhørsforhold?";
-    String getQuestion2_4 = "Er der mærkning om max. mærke-/indstillingsstrøm?";
-    String getQuestion2_5 = "Er mærkning med oplysninger om tekniske data for tavlen foretaget?";
-    String getQuestion2_6 = "Er udgående beskyttelsesledere anbragt i separate klemmer i tavlen?";
-    String getQuestion2_7 = "Er afdækning og dækplader monteret?";
-    String getQuestion2_8 = "Er indføringer tilpasset/tætnet, så tavlens kapslingsklasse er som mærket?";
+    String getQuestion13 = "Er der tilstrækkelig plads til at arbejde på/adgang til tavlen?";
+    String getQuestion14 = "Er overstrømsbeskyttelsesudstyr korrekt valgt og evt. indstillet?";
+    String getQuestion15 = "Er der en entydig mærkning af beskyttelsesudstyr med tilhørsforhold?";
+    String getQuestion16 = "Er der mærkning om max. mærke-/indstillingsstrøm?";
+    String getQuestion17 = "Er mærkning med oplysninger om tekniske data for tavlen foretaget?";
+    String getQuestion18 = "Er udgående beskyttelsesledere anbragt i separate klemmer i tavlen?";
+    String getQuestion19 = "Er afdækning og dækplader monteret?";
+    String getQuestion20 = "Er indføringer tilpasset/tætnet, så tavlens kapslingsklasse er som mærket?";
 
     //3. Installationen
     String text3 = "3. Installation:";
@@ -90,18 +100,32 @@ public class VerificationChart {
 
     //Kortslutningsstrøm
 
+    public VerificationChart() {
 
-    public VerificationChart() { //todo include costumer name and adress etc
+
+        questions.add(0, question0);
+        questions.add(1, question1);
+        questions.add(2, question2);
+        questions.add(3, question3);
+        questions.add(4, question4);
+        questions.add(5, question5);
+        questions.add(6, question6);
+        questions.add(7, question7);
+        questions.add(8, question8);
+        questions.add(9, question9);
+        questions.add(10, question10);
+        questions.add(11, question11);
+        questions.add(12, question12);
+
+
+
 
     }
 
-    public boolean[][][] getAnswer() {
-        return answer;
-    }
 
-    public void setAnswer(boolean[][][] answer) {
-        this.answer = answer;
-    }
+
+
+
 
     public void setCostumerName(String costumerName) {
         this.costumerName = costumerName;
@@ -182,91 +206,91 @@ public class VerificationChart {
     }
 
     public String getQuestion1_1() {
-        return question1_1;
+        return question0;
     }
 
-    public String getQuestion1_2() {
-        return question1_2;
+    public String getQuestion1() {
+        return question1;
     }
 
-    public String getQuestion1_3() {
-        return question1_3;
+    public String getQuestion2() {
+        return question2;
     }
 
-    public String getQuestion1_4() {
-        return question1_4;
+    public String getQuestion3() {
+        return question3;
     }
 
-    public String getQuestion1_5() {
-        return question1_5;
+    public String getQuestion4() {
+        return question4;
     }
 
-    public String getQuestion1_6() {
-        return question1_6;
+    public String getQuestion5() {
+        return question5;
     }
 
-    public String getQuestion1_7() {
-        return question1_7;
+    public String getQuestion6() {
+        return question6;
     }
 
-    public String getQuestion1_8() {
-        return question1_8;
+    public String getQuestion7() {
+        return question7;
     }
 
-    public String getQuestion1_9() {
-        return question1_9;
+    public String getQuestion8() {
+        return question8;
     }
 
-    public String getQuestion1_10() {
-        return question1_10;
+    public String getQuestion9() {
+        return question9;
     }
 
-    public String getQuestion1_11() {
-        return question1_11;
+    public String getQuestion10() {
+        return question10;
     }
 
-    public String getQuestion1_12() {
-        return question1_12;
+    public String getQuestion11() {
+        return question11;
     }
 
-    public String getQuestion1_13() {
-        return question1_13;
+    public String getQuestion12() {
+        return question12;
     }
 
     public String getText2() {
         return text2;
     }
 
-    public String getGetQuestion2_1() {
-        return getQuestion2_1;
+    public String getGetQuestion13() {
+        return getQuestion13;
     }
 
-    public String getGetQuestion2_2() {
-        return getQuestion2_2;
+    public String getGetQuestion14() {
+        return getQuestion14;
     }
 
-    public String getGetQuestion2_3() {
-        return getQuestion2_3;
+    public String getGetQuestion15() {
+        return getQuestion15;
     }
 
-    public String getGetQuestion2_4() {
-        return getQuestion2_4;
+    public String getGetQuestion16() {
+        return getQuestion16;
     }
 
-    public String getGetQuestion2_5() {
-        return getQuestion2_5;
+    public String getGetQuestion17() {
+        return getQuestion17;
     }
 
-    public String getGetQuestion2_6() {
-        return getQuestion2_6;
+    public String getGetQuestion18() {
+        return getQuestion18;
     }
 
-    public String getGetQuestion2_7() {
-        return getQuestion2_7;
+    public String getGetQuestion19() {
+        return getQuestion19;
     }
 
-    public String getGetQuestion2_8() {
-        return getQuestion2_8;
+    public String getGetQuestion20() {
+        return getQuestion20;
     }
 
 
