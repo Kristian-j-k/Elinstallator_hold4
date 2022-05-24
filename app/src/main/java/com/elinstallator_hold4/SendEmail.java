@@ -34,4 +34,25 @@ public class SendEmail extends AppCompatActivity {
             }
         });
     }
+
+    private void sendMail() {
+        String fileName = "skema.pdf"; //TODO skal ændres på
+        File fileLocation = new File(Environment.getExternalStorageDirectory().getAbsolutePath(), fileName);
+        Uri path = Uri.fromFile(fileLocation);
+
+        String recipientList = mEditTextTo.getText().toString();
+        String[] recipients = recipientList.split(","); //Splitter text med et "," (komma) for at kunne sende mail til flere forskellige emails. Datastruktur array.
+        String subject = mEditTextSubject.getText().toString();
+        String message = mEditTextMessage.getText().toString();
+
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.putExtra(Intent.EXTRA_EMAIL,recipients); //Tager string arrayed med listen over forskellige emails.
+        intent.putExtra(Intent.EXTRA_SUBJECT,subject);
+        intent.putExtra(Intent.EXTRA_TEXT,message);
+        //Tilføjer fil til mail
+        intent.putExtra(Intent.EXTRA_STREAM, path);
+
+        intent.setType("message/rfc822");
+        startActivity(Intent.createChooser(intent,"Vælg en email app"));
+    }
 }
