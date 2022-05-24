@@ -15,4 +15,4 @@
 - Brugeren udfylder mailen og indtaster emailaddressen der skal sendes til, og trykker Send Mail
 - Systemet viser et par valgmuligheder af mail apps
 - Brugeren vælger Gmail
-- Systemet går over på Gmail appen og derfra sender mailen
+- Systemet går over på Gmail appen og derfra sender mailen.
