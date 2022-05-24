@@ -44,4 +44,4 @@ Det er usikkert hvordan tegningen skal genereres i korrekt format, det skal derf
 
 **Imødekommelses strategi**  
 
-Der vil være en liste over modtagere der viser deres emails. I denne liste vil man kunne finde andre el-installatører/hvad man har brug for.
+Der vil være en liste over modtagere der viser deres emails. I denne liste vil man kunne finde andre el-installatører/hvad kunden har brug for.
