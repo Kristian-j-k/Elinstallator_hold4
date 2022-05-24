@@ -22,7 +22,7 @@ Når vi indsamler personlige data, skal GDPR regler overholdes. Vi vil derfor fo
 
 |  Risiko | Sandsynlighed | Konsekvens | Prioritet | Revideret sandsynlighed | Revideret konsekvens |
 | ------------------------------------ | ---------------------------------------------------- | --------- | --------- | ------------------ |--------- |
-| Fejl ved skabelse af .pdf fil | 3/10 | Filen kan ikke åbnes eller sendes videre, og møder ikke kundes ønske. (10/10)   | Lav | 3/10 | Vi mener vi har styr på hvordan man får konverteret skemaet til en .pdf fil. (3/10) |
+| Fejl ved skabelse af .pdf fil | 3/10 | Filen kan ikke åbnes eller sendes videre, og møder derfor ikke kundens ønske. (10/10)   | Lav | 3/10 | Vi mener vi har styr på hvordan man får konverteret skemaet til en .pdf fil. (3/10) |
 
 **Imødekommelses strategi**  
 Vi mener vi har en okay forståelse for hvordan man kan skabe en .pdf fil uden der opstår nogen problemer, og hvis ikke, så vil vi have tid til at finde ud af det.
@@ -40,8 +40,8 @@ Det er usikkert hvordan tegningen skal genereres i korrekt format, det skal derf
 
 |  Risiko | Sandsynlighed | Konsekvens | Prioritet | Revideret sandsynlighed | Revideret konsekvens |
 | ------------------------------------ | ---------------------------------------------------- | --------- | --------- | ------------------ |--------- |
-|Mailen bliver sendt til den forkerte email | 3/10 | Der er kan være en risiko for at kunden sender mailen til den forkerte email, og derfor sender skemaet og persondata til en fremmede. (6/10)   | Mellem  | 1/10 | Der er stadig en lav chance for at brugeren blot bekræfter adressen uden at kontrollere den, men det er mere sikkert.(1/10) |
+|Mailen bliver sendt til den forkerte email | 3/10 | Sender skemaet og persondata til en fremmede person. (6/10)   | Mellem  | 1/10 | Der vil stadig være en lav chance for at brugeren vil skrive forkert, eller vælge forkert modtager uden at kontrollere modtagerens email addresse, men med en liste over modtagere vil det blive mere sikkert at afsende email. (1/10) |
 
 **Imødekommelses strategi**  
 
-Modtageremail tages fra en fast liste hvor producent/sælger/tømrer findes og kundens mailadresse skal bekræftes inden mailen sendes.
+Der vil være en liste over modtagere der viser deres emails. I denne liste vil man kunne finde andre el-installatører/hvad man har brug for.
