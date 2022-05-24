@@ -6,7 +6,7 @@
 - Bruger laver en konto
 - Systemet opretter brugeren i Databasen
 - Bruger logger ind med den nye konto
-- Brugeren vælger at udfylde et nyt skema
+- Brugeren laver et nyt skema
 - Systemet viser skemaet 
 - Brugeren udfylder skemaet og trykker færdig
 - Systemet skaber en .pdf fil af det udfyldte skema
