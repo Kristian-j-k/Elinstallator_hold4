@@ -2,7 +2,7 @@
 
 |  Risiko | Sandsynlighed | Konsekvens | Prioritet | Revideret sandsynlighed | Revideret konsekvens |
 | ------------------------------------ | ---------------------------------------------------- | --------- | --------- | ------------------ |--------- |
-| Sygdom blandt udviklere | 6/10 | Ikke lige så lang tid til at udvikle (6/10)      | Lav    | 3/10 | Stadig et tidstab, men corona er ikke en lige så stor ting længere (3/10) |
+| Sygdom blandt udviklere | 6/10 | Ikke lige så lang tid til at udvikle (6/10)      | Lav    | 3/10 | Stadig et tidstab, men corona er ikke en lige så stor ting længere, så vi regner ikke med noget særlig tidstab. (3/10) |
 
 **Imødekommelses strategi:**
 
