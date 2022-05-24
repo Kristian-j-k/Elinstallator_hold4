@@ -28,15 +28,6 @@ Når vi indsamler personlige data, skal GDPR regler overholdes. Vi vil derfor fo
 Vi mener vi har en okay forståelse for hvordan man kan skabe en .pdf fil uden der opstår nogen problemer, og hvis ikke, så vil vi have tid til at finde ud af det.
 
 
-|  Risiko | Sandsynlighed | Konsekvens | Prioritet | Revideret sandsynlighed | Revideret konsekvens |
-| ------------------------------------ | ---------------------------------------------------- | --------- | --------- | ------------------ |--------- |
-|Filen kan ikke åbnes i Autocad. | 5/10 | Vi kan ikke imødekomme kundens ønske(8/10)      | Høj   | 3/10 |  Selv med grundig test og undersøgelse er det stadig usikkert om filen kan gemmes i DWG format.(3/10) |
-
-**Imødekommelses strategi**  
-
-Det er usikkert hvordan tegningen skal genereres i korrekt format, det skal derfor undersøges hvordan vi gør det rent teknisk og det skal testes at det er muligt for os at gemme i det format.
-
-
 
 |  Risiko | Sandsynlighed | Konsekvens | Prioritet | Revideret sandsynlighed | Revideret konsekvens |
 | ------------------------------------ | ---------------------------------------------------- | --------- | --------- | ------------------ |--------- |
