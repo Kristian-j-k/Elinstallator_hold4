@@ -4,10 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF387"
     android:backgroundTint="#FFF387"
     android:orientation="vertical"
     android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Mail"
+        android:textStyle="bold"
+        android:textSize="34dp"
+        android:background="#FFF387"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <TextView
         android:layout_width="match_parent"
@@ -51,6 +60,8 @@
         android:id="@+id/button_send"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send mail" />
+        android:text="Send mail"
+        android:backgroundTint="#FFF387"
+        android:textColor="#000000"/>
 
 </LinearLayout>

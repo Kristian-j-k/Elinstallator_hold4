@@ -52,7 +52,7 @@ public class SendEmail extends AppCompatActivity {
         //Tilføjer fil til mail
         intent.putExtra(Intent.EXTRA_STREAM, path);
 
-        intent.setType("message/rfc822");
+        intent.setType("message/rfc822"); //rfc822 er koden til email apps
         startActivity(Intent.createChooser(intent,"Vælg en email app"));
     }
 }
