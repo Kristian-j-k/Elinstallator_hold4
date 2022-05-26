@@ -45,7 +45,9 @@ Her identificere vi hvordan vi har tænkt os at tjene på vores produkt. Appen v
 
 For at få styr på vores finansiering, har vi lavet et investeringsbudget. Men dette er vores overordnede tanker.
 
-- 
+- Indtægter: Vi vil lave et software program, som vi vil kunne tilpasse til den enkelte virksomhed som ansætter el-installatører. For køb af denne app har vi sat en pris på 30.000 DKK for et køb af licens og tilpasningen af appen til den enkelte kunde. Og derudover vil vi også tilbyde kunder at købe en support/vedligeholdelses aftale, hvor vi vil tilbyde at opdatere appen som kunden har lyst til, eller hjælpe kunden hvis der går noget galt med appen. Denne support aftale vil koste kunden 5000 DKK pr. halvår. I det første halvår udover vores semester projekt, bruger vi tiden på at lave vores app om så den hurtigt kan tilpasses en ny kunde, og i det andet halvår forventer vi at have fået vores første kunde.
+- Udgifter: Vi vil kunne holde vores indledende omkostninger og udgifter lave da vi stadig er i gang på Datamatiker studiet, og denne virksomhed vil være et projekt ved siden af studiet. Vi har ingen udgifter i form af løn eller husleje, og derfor vil også vores omkostninger i form af bogholderi og diverse være lave. Siden at vi forventer et salg fter første halvår, forventer vi at kunne give os selv løn, men vi vil investere det meste af vores overskud i virksomheden. 
+- Opstartslån: Vi mener ikke vi har brug for at skulle låne penge nogen steder for at få startet vores virksomhed, da vi allerede har det hardware og software i form af computere og IDEs, vi skal bruge for komme i gang med at udvikle vores produkt. 
 
 ### Strategi for implementering og skalering af virksomheden til andre kundesegmenter
 ## Implementering
