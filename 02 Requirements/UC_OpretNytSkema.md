@@ -1,4 +1,4 @@
-# UC Opret nye skema
+# UC Opret nyt skema
 
 UseCase navn | Opret nyt skema | 
 -------------| -------------------------------| 
