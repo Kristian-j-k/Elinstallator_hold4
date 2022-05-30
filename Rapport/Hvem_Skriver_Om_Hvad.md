@@ -1,4 +1,4 @@
-Simon: Skriver om SSD, mit kode (email), alt virksomhed, Domænemodel.
+Simon: SSD, mit kode (email), alt virksomhed, Domænemodel.
 
 Kristian: E/R diagram, SD, hans kode, 
 
