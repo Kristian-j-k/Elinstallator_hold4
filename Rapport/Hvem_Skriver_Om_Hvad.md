@@ -1,4 +1,4 @@
-Simon: SSD, mit kode (email), alt virksomhed, Domænemodel.
+Simon: SSD, mit kode, alt virksomhed, Domænemodel, use case.
 
 Kristian: E/R diagram, SD, hans kode, 
 
