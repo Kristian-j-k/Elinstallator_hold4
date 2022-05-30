@@ -6,7 +6,7 @@ Efter vores gratis udvikling af vores app til Zealand, vil vi undersøge om der 
 ## Forretningsmodel
 Vores produkt er en Android app, som vil kunne benyttes af en El-installatør til at skabe et skema/checkliste, som el-installatøren vil kunne bruge når personen er ude for at inspicere forskellige slags elinstallationer.
 
-Vi kender ikke til nogen andre virksomheder som har en App der minder om den vi er i gang med at lave til Zealand, og derefter går vi ud fra at de fleste el-installatører bruger et skema på papirform i deres dagligdag. 
+Vi kender kender til en virksomhed, kaldet Inspectly, som har lavet en App der minder om den vi er i gang med at lave til el-installatørerne på Zealand. Vi kender ikke til andre virksomheder end Inspectly, så derfor vil vi gå ud fra at de fleste el-installatører enten bruger Inspectly eller et skema på papirform i deres dagligdag.
 
 Vi mener derfor at der er en oplagt forretningsidé i, at vi samler erfaring ved at bygge vores App til Zealand, samtidig med at vi tænker på hvordan vi nemt senere kan ændre på Appen, så den ville appellerer til andre virksomheder inde for El-installatør feltet, med den udfordring i skema i papirform. 
 Det er derfor vigtigt at selvom vi giver vores App gratis til Zealand, at vi stadig beholder retten til at videreudvikle på voress App, så vi senere at videresælge en modificeret app til andre virksomheder.
