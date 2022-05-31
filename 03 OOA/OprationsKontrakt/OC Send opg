@@ -1,0 +1,11 @@
+Operation:
+Brugeren afslutter checklisten og sender den til chefen.
+Cross-reference:
+Use Case: Casual Use case.
+Pre-conditions:
+•	Telefonen er tændt.
+•	Applikationen er installeret, og startet.
+•	Brugeren har afslutte opgaven og lave afkrydsningsskemaet.
+• Brugeren har trykket Send.
+Post-konditions:
+•	Modtageren er klar til at modtage opgaven.
