@@ -3,7 +3,7 @@
 UseCase navn | Opret nyt skema | 
 -------------| -------------------------------| 
 Scope        | El-installatør app
-Primary Actor| El-installatører/Kunder
+Primary Actor| El-installatører
 Level        | User-goal
 Description  | Systemet skal kunne oprette en bruger i databasen, logge ind med denne bruger, oprette et skema som brugeren skal kunne afkrydse, skabe en .pdf fil af skemaet, sende denne .pdf fil samt eventuel tekst over mail til en modtager, skifte over til fx. Gmail appen for at færdig gøre afsending af email.
 Stakeholders and Interests  | Zealand
