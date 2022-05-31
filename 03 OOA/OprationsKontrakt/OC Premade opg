@@ -1,0 +1,12 @@
+Operation:
+Brugeren vælger en prelavet opgave.
+Cross-reference:
+Use Case Casual Usecase
+Pre-conditions:
+•	Android telefonen er tændt.
+•	Applikationen er installeret, og startet.
+•	Brugeren er logget ind og er klar til at afkrydse skemaet.
+Post-conditions:
+•	Systemet er klar til at vise kundens informationer.
+•	Systemet er klar til at få lavet afkrydsnings skemaet.
+•	Systemet er klar til at sende det afkrydset skema til chefen.
