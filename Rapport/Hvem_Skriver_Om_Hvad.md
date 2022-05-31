@@ -5,4 +5,4 @@ Kristian: E/R diagram, SD, hans kode,
 Tim: hans kode, Klasse diagram, operations kontrakter
 
 
-Mangler: Domænemodel
+Mangler at blive tildelt: Domænemodel
