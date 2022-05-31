@@ -1,0 +1,10 @@
+Operation:
+Brugeren logger ind i systemet.
+Cross-reference:
+Use Case: Casual Use case.
+Pre-conditions:
+•	Telefonen er tændt.
+•	Applikationen er installeret, og startet.
+•	Brugeren er klar til at afslutte opgaven og lave afkrydsningsskemaet.
+Post-konditions:
+•	Systemet er klar til at vise de forskellige opgaver, eller lave nye opgaver.
