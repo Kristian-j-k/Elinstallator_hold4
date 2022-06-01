@@ -35,10 +35,10 @@ public class SendEmail extends AppCompatActivity {
         });
     }
 
-    private void sendMail() {
-        String fileName = "skema.pdf"; //TODO skal ændres på
+    public void sendMail() {
+        String fileName = "2percentofmypower.png"; //TODO skal ændres på
         File fileLocation = new File(Environment.getExternalStorageDirectory().getAbsolutePath(), fileName);
-        Uri path = Uri.fromFile(fileLocation);
+        Uri uriPath = Uri.fromFile(fileLocation);
 
         String recipientList = mEditTextTo.getText().toString();
         String[] recipients = recipientList.split(","); //Splitter text med et "," (komma) for at kunne sende mail til flere forskellige emails. Datastruktur array.
@@ -50,9 +50,9 @@ public class SendEmail extends AppCompatActivity {
         intent.putExtra(Intent.EXTRA_SUBJECT,subject);
         intent.putExtra(Intent.EXTRA_TEXT,message);
         //Tilføjer fil til mail
-        intent.putExtra(Intent.EXTRA_STREAM, path);
+        intent.putExtra(Intent.EXTRA_STREAM, uriPath);
 
-        intent.setType("message/rfc822"); //rfc822 er koden til email apps
+        intent.setType("vnd.android.cursor.dir/email"); //message/rfc822 er koden til email apps
         startActivity(Intent.createChooser(intent,"Vælg en email app"));
     }
 }

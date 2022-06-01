@@ -9,6 +9,5 @@ class SendEmailTest {
     @Test
     public void doesSplit() {
         SendEmail sendEmail = new SendEmail();
-
     }
 }
