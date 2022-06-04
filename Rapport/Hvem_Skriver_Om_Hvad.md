@@ -5,7 +5,7 @@ Kristian: E/R diagram, SD, hans kode, brugertest med projektstiller
 Tim: hans kode, Klasse diagram, operations kontrakter
 
 
-Mangler at blive tildelt: Domænemodel, FURPS+, kvalitetssikring (tests), 
+Mangler at blive tildelt: Domænemodel, FURPS+, kvalitetssikring (tests), kravindsamling (snak med projektstiller),
 
 Lav en kortfattet analyse af forskelle og ligheder mellem
 de to systemer, hvor i f.eks. kan inddrage distribution af applikationer, programmeringssprog og
