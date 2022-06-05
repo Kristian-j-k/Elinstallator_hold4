@@ -2,11 +2,12 @@ Simon: SSD, mit kode, alt virksomhed, use case, metodevalg (skriv om SCRUM osv.)
 de to systemer, hvor i f.eks. kan inddrage distribution af applikationer, programmeringssprog og
 udbredelse. Og kan man udvikle applikationer til begge operativsystemer, og hvad kræver det af
 programmøren og det framework der bruges.
-Overvej tillige kortfattet hvordan tråde kan bruges i programmet
+Overvej tillige kortfattet hvordan tråde kan bruges i programmet.
+Problemformulering
 
-Kristian: E/R diagram, SD, hans kode, brugertest med projektstiller
+Kristian: E/R diagram, SD, hans kode, Krav indsamling: brugertest med projektstiller
 
 Tim: hans kode, Klasse diagram, operations kontrakter
 
 
-Mangler at blive tildelt: Domænemodel, FURPS+, kvalitetssikring (tests), kravindsamling (snak med projektstiller),
+Mangler at blive tildelt: Domænemodel, FURPS+, kvalitetssikring (tests),
