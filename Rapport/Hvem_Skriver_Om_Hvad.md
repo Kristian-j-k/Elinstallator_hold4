@@ -4,10 +4,11 @@ udbredelse. Og kan man udvikle applikationer til begge operativsystemer, og hvad
 programmøren og det framework der bruges.
 Overvej tillige kortfattet hvordan tråde kan bruges i programmet.
 Problemformulering
+Domænemodel
 
 Kristian: E/R diagram, SD, hans kode, Krav indsamling: brugertest med projektstiller
 
 Tim: hans kode, Klasse diagram, operations kontrakter
 
 
-Mangler at blive tildelt: Domænemodel, FURPS+, kvalitetssikring (tests),
+Mangler at blive tildelt: kvalitetssikring (tests),
