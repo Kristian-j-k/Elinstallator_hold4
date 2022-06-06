@@ -3,7 +3,7 @@ de to systemer, hvor i f.eks. kan inddrage distribution af applikationer, progra
 udbredelse. Og kan man udvikle applikationer til begge operativsystemer, og hvad kræver det af
 programmøren og det framework der bruges.
 Overvej tillige kortfattet hvordan tråde kan bruges i programmet.
-Problemformulering
+Problemformulering,
 Domænemodel
 
 Kristian: E/R diagram, SD, hans kode, Krav indsamling: brugertest med projektstiller
